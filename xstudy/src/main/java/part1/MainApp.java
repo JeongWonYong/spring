@@ -7,5 +7,6 @@ public class MainApp {
 		System.out.println("hihi");
 		
 		asdasd
+		かい蕉栗っだいけしぉ
 	}
 }
