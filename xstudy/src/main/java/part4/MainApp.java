@@ -1,0 +1,20 @@
+package part4;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+
+public class MainApp {
+	public static void main(String[] args) {
+		//스프링 컨테이너 생성(AC = Application Context)
+		ApplicationContext ac 
+		= new GenericXmlApplicationContext("spring/springcontext4.xml");
+		
+		// 컨테이너로 부터 "board"라는 이름의 빈을 가져온다.
+//		Board board = ac.getBean("board", Board.class); // 타입 참조변수 = 스프링 컨테이너.getBean("Bean ID", 반환 타입)
+		Board board = (Board)ac.getBean("board");//	타입 참조변수 = (타입) 스프링 컨테이너.getBean("Bean ID")
+		
+
+		board.boardWrite();//컨테이너로부터 받은 객체를 사용
+	}
+}
