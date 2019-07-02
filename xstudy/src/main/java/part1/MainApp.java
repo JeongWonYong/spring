@@ -6,8 +6,6 @@ public class MainApp {
 		board.boardWrite();
 		System.out.println("hihi");
 		
-		asdasdasdasd
-		adwqwdasd
-		asdasdasds
+asdasd
 	}
 }
