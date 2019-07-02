@@ -5,5 +5,7 @@ public class MainApp {
 		Board board = new Board();
 		board.boardWrite();
 		System.out.println("hihi");
+		
+		asdasd
 	}
 }
